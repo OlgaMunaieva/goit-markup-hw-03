@@ -11,6 +11,7 @@
     --secondary-background-color-next: #F5F4FA;
     --secondary-background-color-opposit: #2F303A;
     --header-border-color: #ECECEC;
+    --portfolio-border-color: #EEEEEE;
 }
 
 body {
@@ -44,9 +45,10 @@ img {
 
 .conteiner {
     width: 1200px;
-
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -169,14 +171,9 @@ header {
 /* -------- СТУДІЯ hero-------------------- */
 .hero {
     background-color: var(--secondary-background-color-opposit);
-    min-height: 600px;
+
     padding-top: 200px;
     padding-bottom: 200px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .hero-title {
@@ -189,6 +186,9 @@ header {
     color: var(--primary-text-color-opposit);
 
     width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -201,9 +201,12 @@ header {
     color: var(--primary-text-color-opposit);
     background-color: var(--color-accent);
 
+    display: block;
     min-width: 216px;
-    min-height: 50px;
+    align-items: center;
     padding: 10px 32px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-btn:hover,
@@ -218,8 +221,6 @@ header {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .features-item {
@@ -244,7 +245,6 @@ header {
 
 .doing-conteiner {
     padding-top: 0px;
-    padding-bottom: 94px;
 }
 
 .doing-title {
@@ -268,10 +268,7 @@ header {
     background-color: var(--secondary-background-color-next);
 }
 
-.team-conteiner {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+.team-conteiner {}
 
 .team-title {
     font-size: 36px;
@@ -315,7 +312,6 @@ header {
 .filter-list {
     display: flex;
     justify-content: center;
-    padding-top: 94px;
     padding-bottom: 50px;
 }
 
@@ -346,13 +342,12 @@ header {
     display: flex;
     min-width: 1170px;
     flex-wrap: wrap;
-    padding-bottom: 94px;
+    gap: 30px;
 }
 
 .examples-item {
     flex-basis: calc((100% - 30px * 2) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    border-bottom: 1px solid var(--portfolio-border-color);
 }
 
 .examples-item:nth-of-type(3n) {
@@ -382,16 +377,16 @@ header {
 .footer-conteiner {
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 56px;
 }
 
 .footer-conteiner>.logo {
-    margin-bottom: 20px;
-}
-
-.logo {
-    color: var(--primary-text-color-opposit);
+    min-height: 31px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: auto;
 }
 
 .footer {
@@ -400,11 +395,22 @@ header {
 
 .address {
     font-style: inherit;
+
+}
+
+.address-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 81px;
+    margin-top: 11px;
 }
 
 .address-contacts-link {
     line-height: 1.71;
     color: var(--secondary-text-color-opposit);
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 .address-contacts-link[target] {
@@ -416,8 +422,10 @@ header {
     color: var(--color-accent);
 }
 
+.address-item {}
+
 .address-item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 1px;
 }
 
 .contacts-link {}
