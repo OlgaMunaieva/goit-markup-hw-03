@@ -14,6 +14,7 @@
     --portfolio-border-color: #EEEEEE;
 }
 
+/* --------- спільні класи та теги ----------- */
 body {
     font-family: "Roboto", sans-serif;
     color: var(--primary-text-color-main);
@@ -22,7 +23,6 @@ body {
     letter-spacing: 0.03em;
 }
 
-/* --------- спільні класи та теги ----------- */
 h1,
 h2,
 h3,
@@ -139,6 +139,7 @@ header {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color-main);
+
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -369,18 +370,14 @@ header {
 }
 
 /* ----------- footer -------------------- */
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
 .footer-container>.logo {
-    display: block;
+    display: inline-block;
     margin-bottom: 20px;
-    margin-right: auto;
     padding: 0 0;
 }
 
@@ -390,13 +387,6 @@ header {
 
 .address {
     font-style: inherit;
-}
-
-.address-list {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 81px; */
 }
 
 .address-contacts-link {
@@ -412,8 +402,6 @@ header {
 .address-contacts-link:focus {
     color: var(--color-accent);
 }
-
-.address-item {}
 
 .address-item:not(:last-child) {
     margin-bottom: 9px;
